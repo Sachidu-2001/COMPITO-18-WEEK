@@ -7,6 +7,8 @@ namespace HotelApp.Data
     {
         public HotelDbContext(DbContextOptions<HotelDbContext> options) : base(options) { }
 
+        public DbSet<ApplicationUser> Users { get; set; }
+
         public DbSet<Cliente> Clienti {  get; set; }
         public DbSet<Camera> Camere { get; set; }
 
