@@ -6,20 +6,22 @@ namespace HotelApp.Models
     public class Prenotazione
     {
         [Key]
-        public int PrenotazioneId { get; set; }
+        public Guid PrenotazioneId { get; set; }
 
-        [ForeignKey("Cliente")]
+        [Required]
         public int ClienteId { get; set; }
+        public Cliente Cliente { get; set; }
 
-        [ForeignKey("Camera")]
 
+        [Required]
         public int CameraId { get; set; }
+        public Camera Camera { get; set; }
 
         [Required]
-        public DateOnly DataInizio { get; set; }
+        public DateTime DataInizio { get; set; }
 
         [Required]
-        public DateOnly DataFine { get; set; }
+        public DateTime DataFine { get; set; }
 
         [Required]
         public string Stato { get; set; }

@@ -17,7 +17,9 @@ namespace HotelApp.Models
         public string Email { get; set; }
 
         [Required]
-        public int Telefono { get; set; }
+        public string Telefono { get; set; }
+
+        public ICollection<Prenotazione> Prenotazioni { get; set; } = new List<Prenotazione>();
 
     }
 }

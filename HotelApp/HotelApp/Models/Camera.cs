@@ -18,5 +18,7 @@ namespace HotelApp.Models
         [Required]
 
         public decimal Prezzo { get; set; }
+
+        public ICollection<Prenotazione> Prenotazioni { get; set; } = new List<Prenotazione>();
     }
 }
