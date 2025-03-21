@@ -1,6 +1,5 @@
 ﻿using HotelApp.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
 
 namespace HotelApp.Data
 {
